@@ -1,0 +1,160 @@
+/* בסיסי של העיצוב*/
+
+
+/* כללי: מרכז את התוכן בעמוד*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(253, 213, 161);
+  display: flex;
+  justify-content: center; /* מרכז אופקית */
+  align-items: center; /* מרכז אנכית */
+   height: 100vh; /* תופס את כל גובה המסך */
+   text-align: center; /* טקסט ממורכז בתוך האלמנטים */
+ } 
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+
+.product-card {
+  background-color: white; /* צבע רקע לבן */
+  border: 1px solid #ddd; /* גבול רך מסביב לכרטיס */
+  border-radius: 10px; /* פינות מעוגלות */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה רכה */
+  width: 300px; /* גודל קבוע לכרטיס */
+  margin: 10px; /* מרווח בין הכרטיסים */
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease; /* אנימציה בהגדלה */
+}
+.product-card:hover {
+  transform: scale(1.05); /* הגדלה עדינה כשמעבירים מעל הכרטיס */
+}
+
+/* עיצוב לתמונה בתוך הכרטיס */
+.product-image {
+ width: 100%;
+  height: 200px; /* גובה קבוע לתמונה */
+  overflow: hidden; /* מסתיר חלקים מחוץ לתמונה */
+  margin-bottom: 10px;
+} 
+
+.product-img {
+  width: 100%; /* גודל התמונה יתפוס את כל הרוחב */
+  height: 100%; /* הגובה יהיה תמיד מלא */
+ object-fit: cover; /* מתאים את התמונה לגודל התיבה בלי לעוות אותה */
+  border-radius: 8px; /* פינות מעוגלות לתמונה */
+}
+
+/* עיצוב טקסט בתוך הכרטיס */
+ .product-info {
+  margin-bottom: 10px;
+} 
+
+ .product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745; 
+} 
+
+/* עיצוב כפתור "פרטים נוספים" */
+  .product-details-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+ 
+.product-details-btn:hover {
+  background-color: #0056b3; 
+} 
+
+/* עיצוב גלריה שמכילה את כל המוצרים */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}  
+
+/* שינוי עיצוב רספונסיבי */
+ @media (max-width: 768px) {
+  .product-card {
+    width: 100%; 
+  } 
+
+  .product-image {
+    height: 150px; /* גובה תמונה קטן יותר במסכים קטנים */
+   }
+} 
+
+
+
+/* עיצוב לפונט
+div.font {
+  padding: 10px;
+  text-align: start;
+}
+
+div.fontDetails {
+  font-size: larger;
+  padding: 10px;
+  text-align: start;
+  font-style: oblique;
+}
+
+.fakeimgDetails {
+  margin-left: 10%; /* שיפור המיקום */
+  /* margin-right: 10%;
+  border: 1px solid #f08503;
+  border-radius: 5px;
+  width: 80%;  /* הגדרת רוחב דינמי */
+  /* max-width: 400px; /* מקסימום רוחב */
+  /* background-color: rgb(253, 213, 161);
+  box-sizing: border-box;
+  float: none;
+} */ 
+
+/* עיצוב ה- home */
+/*.home {
+  width: 90%;  /* לא לקבוע גודל קבוע כדי להישאר גמיש */
+  /*height: auto;  /* השתמש בגובה אוטומטי כדי להתאים למספר תוכן */
+ /* max-width: 800px;  /* מגביל את הרוחב */
+  /* background-color: rgb(244, 132, 62);
+  margin: 20px auto;
+  box-sizing: border-box;
+} */
+
+/* מדיה קוורי - אם המסך קטן מ-768px */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .home {
+    width: 100%;
+  }
+
+  .fakeimgDetails {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .fakeimg {
+    width: 100%;  /* משאיר את התמונות גמישות */
+    max-width: none;
+  }
+}

@@ -1,0 +1,132 @@
+/* כל המיכל של הסל */
+.bag-container {
+    padding: 20px;
+    margin-top: 0px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* כרטיס מוצר בסל */
+  .bag-item-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  /* תמונת המוצר */
+  .bag-item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  /* אזור המידע של המוצר */
+  .bag-item-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* שם המוצר והמחיר */
+  .bag-item-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .bag-item-price {
+    font-size: 16px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* כמות המוצר */
+  .bag-item-amount {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* כפתורים של הסל */
+  .bag-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* כפתור פלוס ומינוס */
+  .plus, .minus {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .plus:hover, .minus:hover {
+    background-color: #45a049;
+  }
+  
+  /* כפתור מחיקה */
+  .del {
+    background-color: #f44336;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .del:hover {
+    background-color: #e53935;
+  }
+  
+  /* סה"כ סל */
+  .total-container {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pay {
+    margin-top: 20px;
+    background-color: #2196F3;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pay:hover {
+    background-color: #1976D2;
+  }
+  
+  /* עבור מסכים קטנים */
+  @media (max-width: 768px) {
+    .bag-item-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .bag-item-img {
+      width: 80px;
+      height: 80px;
+    }
+    .bag-item-info {
+      margin-left: 0;
+    }
+  }
+  

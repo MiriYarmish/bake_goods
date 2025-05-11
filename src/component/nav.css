@@ -1,0 +1,73 @@
+/* עיצוב ה-navbar */
+#nav {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed; /* דבק למעלה */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* לוודא שזה יהיה מעל כל האלמנטים האחרים */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-nav {
+    display: flex;
+    gap: 15px; /* מרווח בין כל קישור */
+  }
+  
+  .navbar-nav .nav-item {
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: white; /* צבע טקסט של הקישורים */
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* מבטל את קו התחתי */
+    transition: all 0.3s ease; /* אפקט מעבר חלק */
+  }
+  
+  .nav-link:hover {
+    background-color: #4CAF50; /* צבע רקע בירוק בהעברה */
+    color: white;
+  }
+  
+  .nav-link.active {
+    background-color: #007bff; /* צבע רקע כחול לקישור הפעיל */
+  }
+  
+  .navbar h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-item:last-child .nav-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    /* עיצוב מותאם למסכים קטנים */
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px; /* מרווח עליון כשיש Navbar דביק */
+    }
+  
+    .nav-link {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .navbar h3 {
+      display: none; /* מוסר את שם המשתמש במסכים קטנים */
+    }
+  }
+  

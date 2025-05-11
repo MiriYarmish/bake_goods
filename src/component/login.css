@@ -1,0 +1,78 @@
+/* טופס כללי */
+.form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #f9f9f9;  /* צבע רקע בהיר */
+}
+
+/* כותרת */
+.form h2 {
+    font-size: 26px;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+/* עיצוב שדות קלט */
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* שינוי צבע גבול כשממוקדים */
+.form input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* כפתור שליחה */
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* שינוי צבע הכפתור במעבר עכבר */
+.form button:hover {
+    background-color: #357ab7;
+}
+
+/* הודעות שגיאה/הצלחה */
+.form .message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: red;
+}
+
+/* הודעת הצלחה */
+.form .message.success {
+    color: green;
+}
+
+/* עיצוב למובייל */
+@media (max-width: 600px) {
+    .form {
+        padding: 20px;
+    }
+
+    .form h2 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,72 @@
+/* כרטיס מוצר */
+.product-card {
+  
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל קטן */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* אפקט מרחף */
+  }
+  
+  /* גלריית מוצרים */
+  .product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* מינימום רוחב 250px למוצר */
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* תמונה בתוך כרטיס המוצר */
+  .product-image-container {
+    margin-bottom: 15px;
+  }
+  
+  .product-image {
+    width:100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* תתמלא את הכרטיס מבלי להתעקם */
+  }
+  
+  /* כפתור פרטים נוספים */
+  .product-details-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-details-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* עבור מסכים קטנים */
+  @media (max-width: 768px) {
+    .product-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* מינימום 200px */
+      gap: 15px; /* צמצום המרווחים בין המוצרים */
+    }
+    
+    .product-card {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* עבור מסכים קטנים עוד יותר */
+    }
+  }
+  

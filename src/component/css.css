@@ -1,0 +1,100 @@
+/* עיצוב בסיסי ל-container */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(90deg, rgb(253, 213, 161) 0%, rgb(253, 213, 161) 35%, rgb(253, 213, 161) 100%);
+} 
+
+
+
+
+/* עיצוב לטעויות בעיצוב שדות */
+.error-control {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.25rem rgba(220,53,69,.25) !important;
+}
+
+/* עיצוב לתמונות */
+.image_S {
+  width: 100%;
+  height: auto; /* נשאר פרופורציונלי */
+  opacity: 0.6;
+  transition: opacity 1s ease-in-out;
+}
+
+/* צבעים כללים */
+.noTable {
+  color: rgb(253, 213, 161);
+}
+
+/* סגנון גופן */
+.font {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+
+/* עיצוב כללי לשדות טופס */
+input[type=text], input[type=email], input[type=password], input[type=number], select {
+  width: 100%;  /* נותן לכל השדות את רוחב המסך */
+  max-width: 500px;  /* מקסימום רוחב */
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;  /* אנימציה קטנה */
+}
+
+/* Hover לכל שדה */
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+input[type=number]:hover {
+  background-color: #b9b9b9;
+}
+
+/* עיצוב ל-Label */
+label {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+}
+
+
+/*.form {
+  background-color: rgb(253, 213, 161);
+  border-radius: 10px;
+  padding: 40px; /* הגדלתי את הפדינג של הטופס */
+ /* width: 100%;
+  max-width: 500px; /* הגבלתי את הרוחב המקסימלי של הטופס */
+  /*box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל קטן */
+  /*text-align: left; /* טקסט שמאלי בתוך האלמנטים */
+/* } */
+
+/*.form input {
+  width: 100%;
+  padding: 15px; /* הגדלתי את הפדינג של שדות הקלט */
+ /* margin: 10px 0; /* מרווחים גדולים יותר בין השדות */
+  /*border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px; /* הגדלתי את גודל הפונט */
+/*}*/
+
+/* שינוי צבע גבול כשלוחצים על שדה קלט */
+/*.form input:focus {
+  border-color: #66afe9;
+  outline: none;
+}*/
+
+/*.form label {
+  display: block;
+  margin: 15px 0 5px 0; /* הגדלתי את המרווח בין הלייבל לשדה */
+ /* font-size: 18px; /* הגדלתי את גודל הטקסט של הלייבלים */
+/*}*/
+

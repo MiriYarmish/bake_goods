@@ -1,0 +1,74 @@
+/* עיצוב הכללי של טופס ההרשמה */
+.form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* כותרת טופס */
+.form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #6200ea;
+}
+
+/* עיצוב השדות */
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #6200ea;
+    outline: none;
+}
+
+/* עיצוב כפתור הרשמה */
+.form button {
+    background-color: #6200ea;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #5a00d3;
+}
+
+/* הודעה למשתמש על אם הוא רשום או לא */
+.form .message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ff3b3b;
+}
+
+.form .message.success {
+    color: #28a745;
+}
+
+/* התאמת הטופס למובייל */
+@media (max-width: 600px) {
+    .form {
+        padding: 20px;
+    }
+
+    .form h2 {
+        font-size: 20px;
+    }
+}

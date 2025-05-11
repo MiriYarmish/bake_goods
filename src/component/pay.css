@@ -1,0 +1,78 @@
+/* עיצוב הכללי של המסך */
+.pay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* עיצוב טופס התשלום */
+  .pay-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* כותרת */
+  .pay-form h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* שדות קלט */
+  .pay-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* שינוי צבע כשמקלידים בשדה */
+  .pay-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  /* כפתור התשלום */
+  .pay-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* שינוי צבע כשעוברים עם העכבר על הכפתור */
+  .pay-form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* הודעות שגיאה/הצלחה */
+ .pay-form.message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: red;
+}
+  
+  /* עיצוב המסך למוביילים ולטאבלטים */
+  @media (max-width: 600px) {
+    .pay-form {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
